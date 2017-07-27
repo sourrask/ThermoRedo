@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="520dp" >
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/right_icon" />
+
+
+    <nl.tue.student.thermostat.NumberPicker
+        android:id="@+id/numberPicker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="74dp" />
+
+    <nl.tue.student.thermostat.NumberPicker
+        android:id="@+id/numberPicker4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pick a Time"
+        android:id="@+id/textView55"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=":"
+        android:id="@+id/textView66"
+        android:layout_marginTop="123dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/left_icon"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="74dp"
+        android:background="@drawable/day" />
+
+    <ImageView
+        android:id="@+id/arrow_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/aend" />
+
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@drawable/night"
+        android:layout_alignTop="@+id/arrow_icon"
+        android:layout_alignStart="@+id/Thursday" />
+
+    <Button
+        android:id="@+id/switchbutton"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:layout_below="@id/switchbutton"
+        android:layout_marginStart="15dp"
+        android:id="@+id/Monday"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tuesday"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/Monday"
+        android:id="@+id/Tuesday"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Wednesday"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/Tuesday"
+        android:id="@+id/Wednesday"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Monday"
+        android:layout_marginTop="348dp"
+        android:layout_marginStart="60dp"
+        android:text="Thursday"
+        android:id="@+id/Thursday"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Tuesday"
+        android:layout_marginTop="378dp"
+        android:layout_marginStart="60dp"
+        android:text="Friday"
+        android:id="@+id/Friday"/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Wednesday"
+        android:layout_marginTop="408dp"
+        android:layout_marginStart="50dp"
+        android:text="Saturday"
+        android:id="@+id/Saturday"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Sunday"
+        android:id="@+id/Sunday"
+        android:layout_below="@+id/Wednesday"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
